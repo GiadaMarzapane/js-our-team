@@ -32,6 +32,26 @@ for (let index = 0; index < myTeam.length; index++) {
     // const element = myTeam[index];
     for (let key in myTeam[index]) {
         console.log(key + ': ' + myTeam[index][key]);
+        const myDiv = document.createElement('div');
+        const createInfoCard = createMyTeamMateInfo(key, myTeam, index, myDiv);
     }
     console.log('--------------');
+}
+
+function createMyTeamMateInfo(chiave, myArray, myIndex, div) {
+    const teamMateCell = document.querySelector('main div');
+    const container = document.createElement('div');
+
+    const firstHtmlElement = document.createElement('span');
+    firstHtmlElement.classList.add('font-weight-600');
+    firstHtmlElement.innerHTML = chiave + ': ';
+    const seconHtmlElement = document.createElement('span');
+    seconHtmlElement.innerHTML = myArray[myIndex][chiave];
+
+    container.append(firstHtmlElement, seconHtmlElement);
+    /*--------------------------------------------------*/
+    div.append(container);
+    teamMateCell.append(container);
+    
+    return teamMateCell;
 }

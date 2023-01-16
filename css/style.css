@@ -7,3 +7,23 @@
 body{
     font-family: 'Manrope', sans-serif;
 }
+
+header{
+    height: 60px;
+    line-height: 60px;
+    background-color: lavender;
+}
+
+h1{
+    text-align: center;
+    opacity: 0.9;
+}
+
+.border-bottom{
+    border-bottom: 1.5px solid black;
+    padding: 5px 0;
+}
+
+.font-weight-600{
+    font-weight: 600;
+}
