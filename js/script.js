@@ -27,3 +27,11 @@ const myTeam = [
         myImage: 'barbara-ramos-graphic-designer.jpg'
     }    
 ];
+
+for (let index = 0; index < myTeam.length; index++) {
+    // const element = myTeam[index];
+    for (let key in myTeam[index]) {
+        console.log(myTeam[index][key]);
+    }
+    console.log('--------------');
+}
