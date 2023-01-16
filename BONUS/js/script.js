@@ -37,7 +37,7 @@ for (let index = 0; index < myTeam.length; index++) {
                                     </h2>
                                 </div>
                                 <img src="img/${myTeam[index].myImage}">                                
-                                    <div>
+                                    <div class="different-font">
                                         <span class="font-weight-600">
                                         Ruolo:
                                         </span>

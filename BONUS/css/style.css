@@ -33,6 +33,13 @@ img{
     width: 10vw;
     border-radius: 50%;
     border: 2px solid black;
+    filter: grayscale(1);
+}
+
+img:hover{
+    filter: none;
+    cursor: pointer;
+    border: 2px solid aliceblue;
 }
 
 div.flex{
@@ -68,6 +75,16 @@ h2{
     justify-content: center;
 }
 
+div.my-little-container:hover{
+    background-color: rgb(26, 25, 25);
+}
+
 .my-little-container > *{
     margin-bottom: 7px;
+}
+
+.different-font{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    font-style: italic;
 }
